@@ -2,7 +2,7 @@
 
 - **Student name:** MENG LEANGEI
 - **Student ID:** e20221618
-- **Learner Lab user name:** user5623115 (voclabs/user5623115=MENG_LEANGEI)
+- **Learner Lab user name:** voclabs/user5623115=MENG_LEANGEI
 - **Date completed:** 2026-10-26
 
 ---
@@ -88,7 +88,7 @@ echo "Welcome to the EC2 Challenge" | sudo tee /var/www/html/index.html
 
 **2. In Part 1.1 you never logged in to install the web server. What installed it, and when did it run?**
 
-The **user data** script, a bootstrap script entered under *Advanced details → User data* when launching the instance. EC2 passes it to **cloud-init**, which runs it as root **once, on the instance's first boot**. The script installed and started the web server and wrote the "Hello World from Educative (hostname)" page, so the site was ready without me logging in.
+The **user data** script, a bootstrap script entered under _Advanced details → User data_ when launching the instance. EC2 passes it to **cloud-init**, which runs it as root **once, on the instance's first boot**. The script installed and started the web server and wrote the "Hello World from Educative (hostname)" page, so the site was ready without me logging in.
 
 **3. Why does the web page open with `http://` but not with `https://`?**
 
@@ -98,7 +98,7 @@ The web server only listens on port 80 (plain HTTP). HTTPS needs port 443 open i
 
 - **Where:** On the Launch instance page, in the **Configure storage** section, I changed the root volume (gp3) size from the default 8 GiB to **10 GiB**.
 - **How to check:**
-  - In the console: select the instance → **Storage** tab → the root device's volume shows **10 GiB** (or under *Elastic Block Store → Volumes*).
+  - In the console: select the instance → **Storage** tab → the root device's volume shows **10 GiB** (or under _Elastic Block Store → Volumes_).
   - On the instance:
     ```bash
     lsblk          # the root disk (xvda / nvme0n1) shows 10G
