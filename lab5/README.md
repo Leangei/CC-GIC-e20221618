@@ -87,3 +87,4 @@ The EC2 terminal shows the application backend configuration and public IP used 
 - [ ] RDS instance `aws-dbo-sql` and Aurora cluster `aws-dbo-aurora` deleted.
 - [ ] S3 bucket emptied and deleted.
 - [ ] DynamoDB table `posts` deleted.
+-
